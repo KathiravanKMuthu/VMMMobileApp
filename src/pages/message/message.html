@@ -1,0 +1,30 @@
+<ion-header no-border>
+    <ion-navbar transparent>
+        <ion-title>{{msg.title}}</ion-title>
+        <ion-buttons end>
+            <button class="white" ion-button small clear (click)="share(msg)"><ion-icon name="share"></ion-icon></button>
+            <button class="white" ion-button small clear *ngIf="!isFavorite()" (click)="favorite()"><ion-icon name="star-outline"></ion-icon></button>
+            <button class="white" ion-button small clear *ngIf="isFavorite()" (click)="unFavorite()"><ion-icon name="star"></ion-icon></button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-row class="white-bg">
+        <ion-col>
+            <img src="{{this.imageUrl}}{{msg.picture}}" style="width: 100%">
+        </ion-col>
+    </ion-row>
+    <ion-row class="white-bg" padding>
+        <ion-col>
+            <h1 class="title">{{msg.title}}</h1>
+            <p class="date">Published: {{msg.time_created | date}}</p>
+        </ion-col>
+    </ion-row>
+    <ion-row class="white-bg" padding>
+        <ion-col style="width:100%">
+            <pre class="details">
+                {{msg.description}}
+            </pre>
+        </ion-col>
+    </ion-row>
+</ion-content>

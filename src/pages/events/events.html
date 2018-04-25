@@ -1,0 +1,43 @@
+<ion-header no-border>
+    <ion-navbar transparent>
+        <button class="white" ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Events</ion-title>
+        <ion-buttons end>
+            <button class="white" ion-button small clear *ngIf="mode==='card'" (click)="makelist()"><ion-icon name="list"></ion-icon></button>
+            <button class="white" ion-button small clear *ngIf="mode==='list'" (click)="makecard()"><ion-icon name="grid"></ion-icon></button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list text-wrap *ngIf="mode==='list'">
+        <ion-item no-lines (click)="detail(msg)" *ngFor="let msg of messages">
+            <ion-thumbnail item-right>
+                <img src="{{this.imageUrl}}{{msg.picture}}" />
+            </ion-thumbnail>
+            <p class="date"><ion-icon name="md-plane"></ion-icon> {{getEventPlace(msg.message_payload)}}</p>
+            <p class="date"><ion-icon name="md-calendar"></ion-icon> {{getEventDateTime(msg.message_payload)}}</p>
+            <h2 class="title"><b>{{msg.title}}</b></h2>
+        </ion-item>
+    </ion-list>
+    <ion-list *ngIf="mode==='card'">
+        <ion-card (click)="detail(msg)" *ngFor="let msg of messages">
+
+            <ion-item>
+                <span class="positive">{{msg.time_created | date}}</span>
+                <h2 class="title"><b>{{msg.title}}</b></h2>
+            </ion-item>
+
+            <ion-card-content>
+                <img src="{{this.imageUrl}}{{msg.picture}}" class="img-card" />
+                <p class="details">{{msg.description.substr(0,100)}}...<a href="#">More</a></p>
+            </ion-card-content>
+        </ion-card>
+    </ion-list>
+
+    <ion-infinite-scroll (ionInfinite)="getNext($event)">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>

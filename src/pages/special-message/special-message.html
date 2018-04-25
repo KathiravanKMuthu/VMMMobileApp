@@ -1,0 +1,33 @@
+<ion-header no-border>
+    <ion-navbar transparent>
+        <ion-title>{{msg.title}}</ion-title>
+        <ion-buttons end>
+            <button class="white" ion-button small clear (click)="share(msg)"><ion-icon name="share"></ion-icon></button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-row class="white-bg">
+        <ion-col>
+                <iframe width="100%" height="315" 
+                        [src]="trustedVideoUrl ? trustedVideoUrl : null"
+                        (load)="trustedVideoUrl ? handleIFrameLoadEvent() : null"
+                        frameborder="0" allowfullscreen>
+                </iframe>
+        </ion-col>
+    </ion-row>
+    <ion-row class="white-bg" padding>
+        <ion-col>
+            <h1 class="title">{{msg.title}}</h1>
+            <p class="date">Published: {{msg.time_created | date}}</p>
+        </ion-col>
+    </ion-row>
+    <ion-row class="white-bg" padding>
+        <ion-col>
+            <pre class="details">
+                {{msg.description}}
+            </pre>
+        </ion-col>
+    </ion-row>
+</ion-content>

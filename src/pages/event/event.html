@@ -1,0 +1,38 @@
+<ion-header no-border>
+    <ion-navbar transparent>
+        <ion-title>{{msg.title}}</ion-title>
+        <ion-buttons end>
+            <button class="white" ion-button small clear (click)="share(msg)"><ion-icon name="share"></ion-icon></button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-row class="white-bg">
+        <ion-col>
+            <img src="{{this.imageUrl}}{{msg.picture}}" style="width: 100%">
+        </ion-col>
+    </ion-row>
+    <ion-row class="white-bg" padding>
+        <ion-col>
+            <h1 class="title">{{msg.title}}</h1>
+        </ion-col>
+    </ion-row>
+    <ion-row class="white-bg" padding>
+        <ion-col>
+            <pre class="details">
+                {{msg.description}}
+            </pre>
+        </ion-col>
+    </ion-row>
+    <ion-row class="white-bg" padding>
+        <ion-col>
+            <p class="date"><ion-icon name="md-plane"></ion-icon> {{getEventPlace(msg.message_payload)}}</p>
+        </ion-col>
+    </ion-row>
+    <ion-row class="white-bg" padding>
+        <ion-col>
+            <p class="date"><ion-icon name="md-calendar"></ion-icon> {{getEventDateTime(msg.message_payload)}}</p>
+        </ion-col>
+    </ion-row>
+</ion-content>
