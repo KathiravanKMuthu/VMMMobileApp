@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController, Platform } from 'ionic-angular';
 import { ENV } from '@environment';
 import { MessagePage } from '../message/message';
+import { MessagesPage } from '../messages/messages';
 
 @IonicPage()
 @Component({
@@ -13,48 +14,64 @@ export class Favorite {
   messages:any[];
   mode: String="list";
   imageUrl: any;
+    
+  // Property used to store the callback of the event handler to unsubscribe to it when leaving this page
+  public unregisterBackButtonAction: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
-    this.getFavorite();
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, public platform: Platform) {
     this.imageUrl = ENV.IMAGE_PATH;
   }
 
-  ionViewDidLoad() {
+  ionViewDidEnter() {
+    this.getFavorite();
+    var messages = JSON.parse(localStorage.getItem("msm_favorite"));
+    if(messages == null || messages.length <= 0)
+    {
+      let alert = this.alertCtrl.create({
+                   title: 'Info', subTitle: "Your favorite list is empty !!!", buttons: ['OK'], cssClass: "customLoader"
+
+      });
+
+      alert.present();
+    }
+
+    this.initializeBackButtonCustomHandler();
+  }
+
+  ionViewWillLeave() {
+      // Unregister the custom back button action for this page
+      this.unregisterBackButtonAction && this.unregisterBackButtonAction();
+  }
+
+  public initializeBackButtonCustomHandler(): void {
+      this.unregisterBackButtonAction = this.platform.registerBackButtonAction(() => {
+        this.navCtrl.setRoot(MessagesPage);
+        this.navCtrl.popToRoot();
+      }, 10);
   }
 
   detail(message){
-  this.navCtrl.push(MessagePage, {
-    message:message
-  });
-}
-
-  delete(item){
-      let confirm = this.alertCtrl.create({
-      title: 'Are you sure you want to unfavorite this?',
-      message: '',
-      buttons: [
-        {
-          text: 'No',
-          handler: () => {
-
-          }
-        },
-        {
-          text: 'Yes',
-          handler: () => {
-          var messages= JSON.parse(localStorage.getItem("msm_favorite"));
-          for(let i=0; i<messages.length; i++){
-            if(item.id===messages[i].id){
-              messages.splice(messages.indexOf(messages[i]), 1);
-              this.messages= messages;
-              localStorage.setItem("msm_favorite", JSON.stringify(messages));
-            }
-          }
-          }
-        }
-      ]
+    this.navCtrl.push(MessagePage, {
+      message:message
     });
-    confirm.present();
+  }
+
+  delete(item) {
+      var messages = JSON.parse(localStorage.getItem("msm_favorite"));
+      for(let i = 0; i < messages.length; i++)
+      {
+          if(item.id === messages[i].id)
+          {
+              messages.splice(messages.indexOf(messages[i]), 1);
+              localStorage.setItem("msm_favorite", JSON.stringify(messages));
+              this.messages = messages;
+              /*let alert = this.alertCtrl.create({
+                           title: 'Success', subTitle: 'Successfully removed from Favorite list!', buttons: ['OK'], cssClass: "customLoader"
+              });
+
+              alert.present();*/
+          } // if
+      } // for
   }
 
 	getFavorite(){

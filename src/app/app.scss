@@ -17,6 +17,25 @@ ion-item {
     border-top: 3px solid #79a6d2 !important;
 }
 
+.customLoader {
+    border-radius: 20px;
+    background-color: transparent;
+    color: black;
+
+    button {
+        color: black !important; // button text color
+            //button bg color
+    }
+    .alert-message {
+        color: black; // text color for confirm alerts
+    }
+
+    .alert-wrapper {
+        background-color: rgba(226,226,226,1); // bg color of alert content
+    }
+
+}
+
 .white-bg {
     background: #fff;
 }

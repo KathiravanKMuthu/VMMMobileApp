@@ -128,16 +128,16 @@
         "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/1e0072f2313b086db8b36c304db02ab7/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/release/drawable-v21_notification_action_background.xml.flat",
-        "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/1e0072f2313b086db8b36c304db02ab7/res/drawable-v21/notification_action_background.xml"
+        "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_icon.png.flat",
+        "source": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/src/main/res/mipmap-xxxhdpi/icon.png"
     },
     {
         "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/release/drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
         "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/99638c1af2fa7a2a42ba681c9d74a5c3/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
     {
-        "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_icon.png.flat",
-        "source": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/src/main/res/mipmap-xxxhdpi/icon.png"
+        "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/release/drawable-v21_notification_action_background.xml.flat",
+        "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/1e0072f2313b086db8b36c304db02ab7/res/drawable-v21/notification_action_background.xml"
     },
     {
         "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/release/drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",

@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { AlertController } from 'ionic-angular';
+import { NavController, LoadingController, Platform, AlertController } from 'ionic-angular';
 import { Service } from '../../providers/service';
-import { LoadingController } from 'ionic-angular';
 import { ENV } from '@environment';
 import { EventPage } from '../event/event';
+import { MessagesPage } from '../messages/messages';
 
 @IonicPage()
 @Component({
@@ -17,16 +16,31 @@ export class EventsPage {
       messages:any;
       mode: String="list";
       imageUrl: any;
+      
+      // Property used to store the callback of the event handler to unsubscribe to it when leaving this page
+      public unregisterBackButtonAction: any;
 
       constructor(public navCtrl: NavController,  public service: Service,
-        public alertCtrl: AlertController, public loadingCtrl: LoadingController) {
+        public alertCtrl: AlertController, public loadingCtrl: LoadingController, public platform: Platform) {
         this.page = 0;
         this.imageUrl = ENV.IMAGE_PATH;
         this.getAllEvents(0);
       }
 
       ionViewDidEnter() {
+          this.initializeBackButtonCustomHandler();
+      }
 
+      ionViewWillLeave() {
+          // Unregister the custom back button action for this page
+          this.unregisterBackButtonAction && this.unregisterBackButtonAction();
+      }
+
+      public initializeBackButtonCustomHandler(): void {
+          this.unregisterBackButtonAction = this.platform.registerBackButtonAction(() => {
+            this.navCtrl.setRoot(MessagesPage);
+            this.navCtrl.popToRoot();
+          }, 10);
       }
 
       getAllEvents(refresher){

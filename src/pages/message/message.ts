@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { ENV } from '@environment';
@@ -14,7 +14,7 @@ export class MessagePage {
     imageUrl: any;
 
     constructor(public navCtrl: NavController, public navParams: NavParams, 
-                public alertCtrl: AlertController, private sharing: SocialSharing) {
+                public alertCtrl: AlertController, private sharing: SocialSharing, public loadingCtrl: LoadingController) {
     	this.msg = navParams.get('message');
       this.imageUrl = ENV.IMAGE_PATH;
     }
@@ -23,108 +23,85 @@ export class MessagePage {
     }
 
     share(message: any){
-        var imageFile = this.imageUrl + message.picture;
-  		  this.sharing.share(message.description, message.title, imageFile, null).then(() => {
+      var imageFile = this.imageUrl + message.picture;
+      let loading = this.loadingCtrl.create({
+        content: 'Please wait...'
+      });
+
+      loading.present();
+      
+        this.sharing.share(message.description, message.title, imageFile, null).then(() => {
           /*let alert = this.alertCtrl.create({
-    	                  title: 'Success', subTitle: 'Share succeed!', buttons: ['OK']
+                        title: 'Success', subTitle: 'Share succeed!', buttons: ['OK']
                       });
           alert.present();*/
         }).catch((err) => {
           let alert = this.alertCtrl.create({
-    	                  title: 'Error', subTitle: 'Share Failed!', buttons: ['OK']
+                        title: 'Error', subTitle: 'Share Failed!', buttons: ['OK'], cssClass: "customLoader"
                       });
           alert.present();
         });
+
+      setTimeout(() => {
+        loading.dismiss();
+      }, 5000);
+
     }
 
     favorite(){
-  let confirm = this.alertCtrl.create({
-        title: 'DO you want to add to Favorite?',
-        message: '',
-        buttons: [
-          {
-            text: 'No',
-            handler: () => {
-
-            }
-          },
-          {
-            text: 'Yes',
-            handler: () => {
-            confirm.present();
     	//check if favorite exist
-    	var fav= JSON.parse(localStorage.getItem("msm_favorite"));
-    	if(fav){
+    	var fav = JSON.parse(localStorage.getItem("msm_favorite"));
+    	if(fav) {
         var isexist= false;
         //check if the article is in favorite
-        for(let i=0; i<fav.length; i++){
-              if(this.msg.id===fav[i].id){
-                isexist= true
-              }
+        for(let i = 0; i < fav.length; i++){
+            if(this.msg.id === fav[i].id){
+                isexist = true;
             }
-    	//if exist add article to favorite
-      if(!isexist){
-        fav.push(this.msg);
-        localStorage.setItem('msm_favorite', JSON.stringify(fav));
-        let alert = this.alertCtrl.create({
-    	 title: 'Success',
-        subTitle: 'Successfully added to Favorite list!',
-        buttons: ['OK']
-      });
-      alert.present();
-      }else{
-        let alert = this.alertCtrl.create({
-    	 title: 'Warning',
-        subTitle: 'Message already exist in Favorite list!',
-        buttons: ['OK']
-      });
-      alert.present();
-      }
-    	}else{
-    	//if not exist create a favorite
-    	var arr= new Array();
-    	arr.push(this.msg);
-    	localStorage.setItem('msm_favorite', JSON.stringify(arr));
-      let alert = this.alertCtrl.create({
-    	 title: 'Success',
-        subTitle: 'Successfully added to Favorite list!',
-        buttons: ['OK']
-      });
-      alert.present();
+        }
+
+      	//if not exist add article to favorite
+        if(!isexist){
+          fav.push(this.msg);
+          localStorage.setItem('msm_favorite', JSON.stringify(fav));
+          /*let alert = this.alertCtrl.create({
+      	                   title: 'Success', subTitle: 'Successfully added to Favorite list!', buttons: ['OK']
+          });
+
+          alert.present();*/
+        } // if(!isexist)
+    	} // if(fav)
+      else
+      {
+      	  //if not exist create a favorite
+      	  var arr = new Array();
+      	  arr.push(this.msg);
+
+      	  localStorage.setItem('msm_favorite', JSON.stringify(arr));
+          /*let alert = this.alertCtrl.create({
+                           title: 'Success', subTitle: 'Successfully added to Favorite list!', buttons: ['OK']
+          });
+
+          alert.present();*/
     	}
-            }
-          }
-        ]
-      });
-     confirm.present();
     }
 
     unFavorite(){
-        let confirm = this.alertCtrl.create({
-        title: 'Are you sure you want to unfavorite this?',
-        message: '',
-        buttons: [
-          {
-            text: 'No',
-            handler: () => {
+        var messages = JSON.parse(localStorage.getItem("msm_favorite"));
+        for(let i = 0; i < messages.length; i++)
+        {
+            if(this.msg.id === messages[i].id)
+            {
+              messages.splice(messages.indexOf(messages[i]), 1);
+              localStorage.setItem("msm_favorite", JSON.stringify(messages));
 
-            }
-          },
-          {
-            text: 'Yes',
-            handler: () => {
-              var messages= JSON.parse(localStorage.getItem("msm_favorite"));
-              for(let i = 0; i < messages.length; i++){
-                  if(this.msg.id === messages[i].id){
-                    messages.splice(messages.indexOf(messages[i]), 1);
-                    localStorage.setItem("msm_favorite", JSON.stringify(messages));
-                  }
-              }
-            } // handler
-          }
-        ] // buttons
-      });
-      confirm.present();
+              /*let alert = this.alertCtrl.create({
+                           title: 'Success', subTitle: 'Successfully removed from Favorite list!', buttons: ['OK']
+              });
+
+              alert.present();*/
+            } // if
+        } // for
     }
 
     isFavorite()

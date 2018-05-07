@@ -20,7 +20,7 @@
             <span class="positive">{{msg.time_created | date}}</span>
             <h2 class="title"><b>{{msg.title}}</b></h2>
             <button ion-button clear (click)="detail(msg)"> <ion-icon style="font-size: 30px;" name="eye"></ion-icon> </button>
-            <button ion-button clear (click)="delete(msg)"> <ion-icon style="font-size: 30px;" name="trash"></ion-icon> </button>
+            <button ion-button clear (click)="delete(msg)"> <ion-icon style="font-size: 30px;" name="star"></ion-icon> </button>
         </ion-item>
     </ion-list>
     <ion-list *ngIf="mode==='card'">
@@ -35,7 +35,7 @@
             </ion-card-content>
             <ion-item>
               <button ion-button clear (click)="detail(msg)"> <ion-icon style="font-size: 30px;" name="eye"></ion-icon> </button>
-              <button ion-button clear (click)="delete(msg)"> <ion-icon style="font-size: 30px;" name="trash"></ion-icon> </button>
+              <button ion-button clear (click)="delete(msg)"> <ion-icon style="font-size: 30px;" name="star"></ion-icon> </button>
             </ion-item>
         </ion-card>
     </ion-list>

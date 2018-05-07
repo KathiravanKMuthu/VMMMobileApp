@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Apr 24 22:09:20 IST 2018
+#Wed May 02 20:49:33 IST 2018
 14.set=ASSET
 180.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/assets/fonts/roboto-regular.woff
 118.set=ANDROID_RESOURCE
@@ -95,7 +95,7 @@
 1.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/cordova-js-src/android/nativeapiprovider.js
 66.set=ASSET
 8.set=ASSET
-16.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+16.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-xhdpi-v4/googleg_standard_color_18.png
 47.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug
 99.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug
 22.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug
@@ -106,7 +106,7 @@
 7.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 103.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-land-ldpi-v4/screen.png
 155.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png
-130.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+130.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/color/common_google_signin_btn_text_dark.xml
 171.set=ASSET
 34.set=JAVA_RESOURCE
 182.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/build/1.js.map
@@ -153,10 +153,10 @@
 37.set=ASSET
 75.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug
 50.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug
-129.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/color/common_google_signin_btn_text_dark.xml
+129.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
 83.set=ASSET
 8.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug
-104.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/color/common_google_signin_btn_text_light.xml
+104.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/ic_os_notification_fallback_white_24dp.png
 156.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/notification_template_part_time.xml
 131.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-mdpi-v4/notification_bg_normal.9.png
 181.set=ANDROID_RESOURCE
@@ -212,7 +212,7 @@
 51.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug
 93.set=ANDROID_RESOURCE
 9.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
-105.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/ic_os_notification_fallback_white_24dp.png
+105.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/color/common_google_signin_btn_text_light.xml
 157.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png
 191.set=ANDROID_RESOURCE
 132.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/assets/fonts/roboto.scss
@@ -239,12 +239,12 @@
 171.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/build/8.js.map
 38.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 133.set=ANDROID_RESOURCE
-17.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-xhdpi-v4/googleg_standard_color_18.png
+17.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
 13.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 69.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/assets/css/font-awesome.min.css
 44.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/build/2.js.map
 119.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/build/2.js
-96.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/AndroidManifest.xml
+96.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/notification_template_big_media_custom.xml
 89.set=ANDROID_RESOURCE
 202.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug
 71.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
@@ -297,7 +297,7 @@
 45.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-land-xhdpi-v4/screen.png
 99.set=ASSET
 104.set=ANDROID_RESOURCE
-97.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/notification_template_big_media_custom.xml
+97.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/AndroidManifest.xml
 20.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-xhdpi-v4/notification_bg_normal.9.png
 72.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/build/main.css
 126.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
@@ -305,7 +305,7 @@
 101.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 150.set=ANDROID_RESOURCE
 197.set=ASSET
-5.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout-v16/notification_template_custom_big.xml
+5.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/onesignal_bgimage_notif_layout.xml
 153.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar
 180.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug
 111.set=ANDROID_RESOURCE
@@ -358,7 +358,7 @@
 102.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug
 160.set=JAVA_RESOURCE
 154.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
-6.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/onesignal_bgimage_notif_layout.xml
+6.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout-v16/notification_template_custom_big.xml
 181.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 121.set=ASSET
 count=203
@@ -492,7 +492,7 @@ count=203
 26.set=ASSET
 37.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/cordova-js-src/plugin/android/app.js
 68.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug
-89.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable/common_google_signin_btn_icon_light.xml
+89.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/mipmap-ldpi-v4/icon.png
 12.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/assets/fonts/fontawesome-webfont.eot
 43.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug
 72.set=ASSET
@@ -532,7 +532,7 @@ count=203
 138.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/assets/fonts/noto-sans-bold.ttf
 113.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/notification_media_action.xml
 29.set=ANDROID_RESOURCE
-90.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/mipmap-ldpi-v4/icon.png
+90.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable/common_google_signin_btn_icon_light.xml
 165.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/assets/logo.png
 196.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug
 140.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/assets/fonts/ionicons.svg
@@ -556,7 +556,7 @@ count=203
 43.set=ASSET
 4.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 177.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/assets/debug/www/build/1.js
-100.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/notification_action.xml
+100.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png
 147.set=ASSET
 152.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png
 200.set=ANDROID_RESOURCE
@@ -607,6 +607,6 @@ count=203
 53.set=ASSET
 5.base=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 178.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-xxxhdpi-v4/ic_os_notification_fallback_white_24dp.png
-101.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png
+101.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/notification_action.xml
 153.file=/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar/protobuf.meta
 157.set=ANDROID_RESOURCE

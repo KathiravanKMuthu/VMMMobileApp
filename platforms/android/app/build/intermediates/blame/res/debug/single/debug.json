@@ -8,12 +8,12 @@
         "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.3.aar/9d70d43527d511f3feaac2d7ca7b1d9f/res/drawable-mdpi-v4/ic_os_notification_fallback_white_24dp.png"
     },
     {
-        "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_custom.xml.flat",
-        "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/290b5bee0ddff7069e44576ba6274f0e/res/layout/notification_template_big_media_custom.xml"
-    },
-    {
         "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
         "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/99638c1af2fa7a2a42ba681c9d74a5c3/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_custom.xml.flat",
+        "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/290b5bee0ddff7069e44576ba6274f0e/res/layout/notification_template_big_media_custom.xml"
     },
     {
         "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
@@ -96,12 +96,12 @@
         "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/99638c1af2fa7a2a42ba681c9d74a5c3/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
-        "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xxhdpi_screen.png.flat",
-        "source": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/src/main/res/drawable-land-xxhdpi/screen.png"
-    },
-    {
         "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_normal.xml.flat",
         "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/99638c1af2fa7a2a42ba681c9d74a5c3/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xxhdpi_screen.png.flat",
+        "source": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/src/main/res/drawable-land-xxhdpi/screen.png"
     },
     {
         "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -156,12 +156,12 @@
         "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/1e0072f2313b086db8b36c304db02ab7/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
     {
-        "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/1e0072f2313b086db8b36c304db02ab7/res/drawable-hdpi-v4/notification_bg_normal.9.png"
-    },
-    {
         "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_disabled.xml.flat",
         "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/99638c1af2fa7a2a42ba681c9d74a5c3/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/Users/kkadarkaraimuthu/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/1e0072f2313b086db8b36c304db02ab7/res/drawable-hdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",

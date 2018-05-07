@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.vmmorg.template.msmapp" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.vmmorg.template.msmapp" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
@@ -38,8 +38,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <allow-navigation href="http://192.168.0.103:8100" />
-    <allow-navigation href="http://192.168.123.115:8100" />
+    <allow-navigation href="http://192.168.0.101:8100" />
     <allow-intent href="market:*" />
     <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />

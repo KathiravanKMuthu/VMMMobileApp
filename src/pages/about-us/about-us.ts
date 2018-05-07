@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
+import { MessagesPage } from '../messages/messages';
 
 @IonicPage()
 @Component({
@@ -8,11 +9,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AboutUsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+    // Property used to store the callback of the event handler to unsubscribe to it when leaving this page
+    public unregisterBackButtonAction: any;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AboutUsPage');
-  }
+	constructor(public navCtrl: NavController, public navParams: NavParams, public platform: Platform) {
+	}
+
+    ionViewDidEnter() {
+        this.initializeBackButtonCustomHandler();
+    }
+
+    ionViewWillLeave() {
+        // Unregister the custom back button action for this page
+        this.unregisterBackButtonAction && this.unregisterBackButtonAction();
+    }
+
+    public initializeBackButtonCustomHandler(): void {
+        this.unregisterBackButtonAction = this.platform.registerBackButtonAction(() => {
+        	this.navCtrl.setRoot(MessagesPage);
+        	this.navCtrl.popToRoot();
+        }, 10);
+    }
 
 }

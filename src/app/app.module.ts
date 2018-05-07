@@ -36,7 +36,9 @@ import { OneSignal } from '@ionic-native/onesignal';
     BrowserModule,
     HttpModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      navExitApp: false
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [

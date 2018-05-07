@@ -16,10 +16,12 @@ import { AboutUsPage } from '../pages/about-us/about-us';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
   rootPage: any = MessagesPage;
+  //public alertShown: boolean = false;
 
   pages: Array<{icon:string, title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, private oneSignal: OneSignal) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, 
+                private oneSignal: OneSignal) {
     this.initializeApp();
     this.rootPage = MessagesPage;
 

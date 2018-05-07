@@ -28727,6 +28727,24 @@ ion-item {
   border-top: 3px solid #79a6d2 !important;
 }
 
+.customLoader {
+  border-radius: 20px;
+  background-color: transparent;
+  color: black;
+}
+
+.customLoader button {
+  color: black !important;
+}
+
+.customLoader .alert-message {
+  color: black;
+}
+
+.customLoader .alert-wrapper {
+  background-color: #e2e2e2;
+}
+
 .white-bg {
   background: #fff;
 }
@@ -29044,12 +29062,8 @@ page-about-us .details {
 
 page-about-us i.fa {
   display: inline-block;
-  border-radius: 100px;
-  -webkit-box-shadow: 0px 0px 2px #161616;
-  box-shadow: 0px 0px 2px #161616;
   padding: 0.1em 0.1em;
   color: #3f3f55;
-  background: #f3efef;
 }
 
 page-about-us .row {

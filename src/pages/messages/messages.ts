@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Platform } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { Service } from '../../providers/service';
 import { LoadingController } from 'ionic-angular';
@@ -17,15 +17,53 @@ export class MessagesPage {
     messages:any;
     mode: String="list";
     imageUrl: any;
+    // Property used to store the callback of the event handler to unsubscribe to it when leaving this page
+    public unregisterBackButtonAction: any;
 
     constructor(public navCtrl: NavController,  public service: Service,
-      public alertCtrl: AlertController, public loadingCtrl: LoadingController) {
+      public alertCtrl: AlertController, public loadingCtrl: LoadingController, public platform: Platform) {
       this.page = 0;
       this.imageUrl = ENV.IMAGE_PATH;
       this.getAllMessages(0);
     }
 
-    ionViewWilEnter() {
+    ionViewDidEnter() {
+        this.initializeBackButtonCustomHandler();
+    }
+
+    ionViewWillLeave() {
+        // Unregister the custom back button action for this page
+        this.unregisterBackButtonAction && this.unregisterBackButtonAction();
+    }
+
+    public initializeBackButtonCustomHandler(): void {
+        this.unregisterBackButtonAction = this.platform.registerBackButtonAction(() => {
+                this.presentConfirm();  
+        }, 10);
+    }
+
+    presentConfirm() {
+      let alert = this.alertCtrl.create({
+        title: 'Confirm Exit',
+        message: 'Do you want Exit?',
+        buttons: [
+          {
+            text: 'Cancel',
+            role: 'cancel',
+            handler: () => {
+               console.log("Cancel clicked");
+            }
+          },
+          {
+            text: 'Yes',
+            handler: () => {
+              this.platform.exitApp();
+            }
+          }
+        ],
+        cssClass: "customLoader"
+      });
+       alert.present();
     }
 
     getAllMessages(refresher){

@@ -32,7 +32,7 @@ export class EventPage {
     },
     ()=>{
          let alert = this.alertCtrl.create({
-                        title: 'Error', subTitle: 'Share Failed!', buttons: ['OK']
+                        title: 'Error', subTitle: 'Share Failed!', buttons: ['OK'], cssClass: "customLoader"
                      });
           alert.present();
     })
