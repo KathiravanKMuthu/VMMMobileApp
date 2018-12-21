@@ -4,18 +4,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { OneSignal } from '@ionic-native/onesignal';
 
-import { MessagesPage } from '../pages/messages/messages';
-import { EventsPage } from '../pages/events/events';
-import { SpecialMessagesPage } from '../pages/special-messages/special-messages';
-import { ContactUsPage } from '../pages/contact-us/contact-us';
-import { AboutUsPage } from '../pages/about-us/about-us';
-
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage: any = MessagesPage;
+  rootPage: any = 'MessagesPage';
   //public alertShown: boolean = false;
 
   pages: Array<{icon:string, title: string, component: any}>;
@@ -23,17 +17,35 @@ export class MyApp {
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, 
                 private oneSignal: OneSignal) {
     this.initializeApp();
-    this.rootPage = MessagesPage;
+    this.rootPage = 'MessagesPage';
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { icon:'fa fa-list', title: 'VMM Daily Devotion', component: MessagesPage },
-      { icon:'fa fa-video-camera', title: 'Special Messages', component: SpecialMessagesPage },
-      { icon:'fa fa-calendar', title: 'Events', component: EventsPage },
+      { icon:'fa fa-list', title: 'VMM Daily Devotion', component: 'MessagesPage' },
+      { icon:'fa fa-video-camera', title: 'Special Messages', component: 'SpecialMessagesPage' },
+      { icon:'fa fa-calendar', title: 'Events', component: 'EventsPage' },
       { icon:'fa fa-heart', title: 'Favorites', component: 'Favorite' },
-      { icon:'fa fa-address-card', title: 'Contact Us', component: ContactUsPage },
-      { icon:'fa fa-users', title: 'About Us', component: AboutUsPage }
+      { icon:'fa fa-address-card', title: 'Contact Us', component: 'ContactUsPage' },
+      { icon:'fa fa-users', title: 'About Us', component: 'AboutUsPage' }
     ];
+
+    document.addEventListener("pause", () => {
+        //this.nav.setRoot(this.rootPage);
+        let listaFrames = document.getElementsByTagName("iframe");
+        for (var index = 0; index < listaFrames.length; index++) {
+            let iframe = listaFrames[index].contentWindow;    
+            iframe.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+         }    
+    }, false);
+  
+    /* document.addEventListener("resume", () => {
+        let listaFrames = document.getElementsByTagName("iframe");
+        for (var index = 0; index < listaFrames.length; index++) {
+            let iframe = listaFrames[index].contentWindow;    
+            iframe.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+         }  
+    }, false); */
+  
   }
 
   initializeApp() {

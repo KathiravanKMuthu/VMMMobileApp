@@ -21,10 +21,11 @@ export class MessagesPage {
     public unregisterBackButtonAction: any;
 
     constructor(public navCtrl: NavController,  public service: Service,
-      public alertCtrl: AlertController, public loadingCtrl: LoadingController, public platform: Platform) {
-      this.page = 0;
-      this.imageUrl = ENV.IMAGE_PATH;
-      this.getAllMessages(0);
+      public alertCtrl: AlertController, public loadingCtrl: LoadingController, public platform: Platform) 
+    {
+          this.page = 1;
+          this.imageUrl = ENV.IMAGE_PATH;
+          this.getAllMessages(0);
     }
 
     ionViewDidEnter() {
@@ -72,9 +73,8 @@ export class MessagesPage {
       });
 
       this.messages = [];
-      var next = (this.page)*20;
       loader.present().then(() => {
-          this.service.getAllMessages(next).then(data => {
+          this.service.getAllMessages(this.page).then(data => {
             this.messages = data;
           });
           loader.dismiss();
@@ -89,9 +89,8 @@ export class MessagesPage {
 
       return new Promise((resolve) => {
         setTimeout(() => {
-          var next = (this.page)*20;
 
-          this.service.getAllMessages(next).then(data => {
+          this.service.getAllMessages(this.page).then(data => {
             this.messages = this.messages.concat(data);
           });
   

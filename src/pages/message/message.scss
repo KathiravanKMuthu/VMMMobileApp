@@ -12,12 +12,16 @@ page-message {
   .date {
       color: #888;
   }
-  .details {
+  p {
       line-height: 30px;
       font-size: 16px;
       text-align: justify;
-      white-space: pre-line;
+      white-space: pre-wrap;
+      word-break: normal;
+
       font-family: Roboto,monospace;
+      padding:0px;
+      margin:0px;
   }
 
 }

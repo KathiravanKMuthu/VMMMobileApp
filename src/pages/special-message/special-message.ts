@@ -20,7 +20,7 @@ export class SpecialMessagePage {
   }
 
   ionViewDidLoad() {
-    var temp_url = "https://www.youtube.com/embed/" + this.getVideoURL(this.msg.picture, 'v');
+    var temp_url = "https://www.youtube.com/embed/" + this.getVideoURL(this.msg.picture, 'v') + "?enablejsapi=1";
     this.trustedVideoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl(temp_url);
    
     this.loading = this.loadingCtrl.create({
@@ -28,7 +28,8 @@ export class SpecialMessagePage {
     });
     this.loading.present();
   }
-  
+
+
   handleIFrameLoadEvent() {
     this.loading.dismiss();
   }

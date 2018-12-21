@@ -22,9 +22,8 @@
     </ion-row>
     <ion-row class="white-bg" padding>
         <ion-col style="width:100%">
-            <pre class="details">
-                {{msg.description}}
-            </pre>
+            <p [innerHTML]="msg.description">
+            </p>
         </ion-col>
     </ion-row>
 </ion-content>

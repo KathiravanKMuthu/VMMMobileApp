@@ -103,37 +103,37 @@
   },
   "installed_plugins": {
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.vmmorg.template.msmapp"
     },
     "cordova-plugin-ionic-keyboard": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.vmmorg.template.msmapp"
     },
     "cordova-plugin-ionic-webview": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.vmmorg.template.msmapp"
     },
     "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.vmmorg.template.msmapp"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.vmmorg.template.msmapp"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.vmmorg.template.msmapp"
     },
     "es6-promise-plugin": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.vmmorg.template.msmapp"
     },
     "cordova-plugin-x-socialsharing": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.vmmorg.template.msmapp"
     },
     "cordova-sqlite-storage": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.vmmorg.template.msmapp"
     },
     "ionic-plugin-keyboard": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.vmmorg.template.msmapp"
     },
     "onesignal-cordova-plugin": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.vmmorg.template.msmapp"
     }
   },
   "dependent_plugins": {},
@@ -229,6 +229,6 @@
     "cordova-plugin-x-socialsharing": "5.3.2",
     "cordova-sqlite-storage": "2.3.0",
     "ionic-plugin-keyboard": "2.2.1",
-    "onesignal-cordova-plugin": "2.3.3"
+    "onesignal-cordova-plugin": "2.4.0"
   }
 }

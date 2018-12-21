@@ -7,56 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		277C6F47D095613311B61F17970BA973 /* Pods-VMMApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0840ACB1DA73579735FED5ED53350733 /* Pods-VMMApp-dummy.m */; };
-		CD3AA1FC969988FE1C62FFD235721A75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9BE353B157289E80E23D98C9042DA4A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DD6037866B19406CEF2AA1036E7DBE6B /* Pods-VMM Devotional Messages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 481A0AA4CEBFD3C8C2A77C0E933366CF /* Pods-VMM Devotional Messages-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0840ACB1DA73579735FED5ED53350733 /* Pods-VMMApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VMMApp-dummy.m"; sourceTree = "<group>"; };
-		276F54E668E3A46C75B3B074FF626B72 /* libPods-VMMApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VMMApp.a"; path = "libPods-VMMApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3764C45296E39C3B8C6DF42468B4DDEA /* Pods-VMMApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VMMApp-frameworks.sh"; sourceTree = "<group>"; };
-		53E0EEE859BEEF2005CCB478D17E3D38 /* Pods-VMMApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VMMApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0107E81959F737611A31E5671A94C47B /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/OneSignalSDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
+		0DE907916D3E5E229F1BCEA385B28EDA /* Pods-VMM Devotional Messages-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VMM Devotional Messages-acknowledgements.plist"; sourceTree = "<group>"; };
+		18B5493F4F8E0FEBF319605FBDFE0FAE /* Pods-VMM Devotional Messages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VMM Devotional Messages.release.xcconfig"; sourceTree = "<group>"; };
+		2EA8E67CB3BDCBF95AD6718C1A472FEA /* libPods-VMM Devotional Messages.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VMM Devotional Messages.a"; path = "libPods-VMM Devotional Messages.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		481A0AA4CEBFD3C8C2A77C0E933366CF /* Pods-VMM Devotional Messages-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VMM Devotional Messages-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6760D6A98B9A8959D89C52B63CF3AA58 /* Pods-VMMApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VMMApp.release.xcconfig"; sourceTree = "<group>"; };
+		77AC6E0B2BA4E465F739A2A788CAFF78 /* Pods-VMM Devotional Messages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VMM Devotional Messages.debug.xcconfig"; sourceTree = "<group>"; };
+		79BDB559B15F4A1130B79C7ABAA103CE /* Pods-VMM Devotional Messages-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VMM Devotional Messages-resources.sh"; sourceTree = "<group>"; };
+		833AD099F12C9F5050B9C99D1B8116DC /* Pods-VMM Devotional Messages-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VMM Devotional Messages-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AF445299CC5D067236CEBBE46B9D6621 /* Pods-VMMApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VMMApp-resources.sh"; sourceTree = "<group>"; };
-		DECDA93C5192AB57B1E33310E3621F13 /* Pods-VMMApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VMMApp.debug.xcconfig"; sourceTree = "<group>"; };
-		EEFE937D28698BA152E5C3047A4263C5 /* Pods-VMMApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VMMApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		F51837AE996FDFF6C231234B68AE8409 /* Pods-VMM Devotional Messages-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VMM Devotional Messages-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CD8E9E5BFBA3ADA50CD7F2574E99D494 /* Frameworks */ = {
+		11B8D8804C6D1E0FCADBDCBFB7856911 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD3AA1FC969988FE1C62FFD235721A75 /* Foundation.framework in Frameworks */,
+				9BE353B157289E80E23D98C9042DA4A3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		230062B99C623408497C4104B0183501 /* Targets Support Files */ = {
+		263AAD833E3836704BF4EE537C2AAE89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E5B0EA3B6D831288B866BE516FCF139 /* Pods-VMMApp */,
+				2EA8E67CB3BDCBF95AD6718C1A472FEA /* libPods-VMM Devotional Messages.a */,
 			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		2E5B0EA3B6D831288B866BE516FCF139 /* Pods-VMMApp */ = {
+		31024DDD121568A44F4DC265C15F4D16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				53E0EEE859BEEF2005CCB478D17E3D38 /* Pods-VMMApp-acknowledgements.markdown */,
-				EEFE937D28698BA152E5C3047A4263C5 /* Pods-VMMApp-acknowledgements.plist */,
-				0840ACB1DA73579735FED5ED53350733 /* Pods-VMMApp-dummy.m */,
-				3764C45296E39C3B8C6DF42468B4DDEA /* Pods-VMMApp-frameworks.sh */,
-				AF445299CC5D067236CEBBE46B9D6621 /* Pods-VMMApp-resources.sh */,
-				DECDA93C5192AB57B1E33310E3621F13 /* Pods-VMMApp.debug.xcconfig */,
-				6760D6A98B9A8959D89C52B63CF3AA58 /* Pods-VMMApp.release.xcconfig */,
+				0107E81959F737611A31E5671A94C47B /* OneSignal.framework */,
 			);
-			name = "Pods-VMMApp";
-			path = "Target Support Files/Pods-VMMApp";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6202124E9D433C3EA7B1CF2F09917CA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B109A558AEC0464E1C8AD13A3517ECA8 /* OneSignal */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -64,9 +66,34 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C13874EFBE3230457A7243EC11668BC8 /* Products */,
-				230062B99C623408497C4104B0183501 /* Targets Support Files */,
+				6202124E9D433C3EA7B1CF2F09917CA5 /* Pods */,
+				263AAD833E3836704BF4EE537C2AAE89 /* Products */,
+				C7C6B198C78783FC88728F1C00874967 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		A1EC07610E509D4128FD14F577EDEA3D /* Pods-VMM Devotional Messages */ = {
+			isa = PBXGroup;
+			children = (
+				F51837AE996FDFF6C231234B68AE8409 /* Pods-VMM Devotional Messages-acknowledgements.markdown */,
+				0DE907916D3E5E229F1BCEA385B28EDA /* Pods-VMM Devotional Messages-acknowledgements.plist */,
+				481A0AA4CEBFD3C8C2A77C0E933366CF /* Pods-VMM Devotional Messages-dummy.m */,
+				833AD099F12C9F5050B9C99D1B8116DC /* Pods-VMM Devotional Messages-frameworks.sh */,
+				79BDB559B15F4A1130B79C7ABAA103CE /* Pods-VMM Devotional Messages-resources.sh */,
+				77AC6E0B2BA4E465F739A2A788CAFF78 /* Pods-VMM Devotional Messages.debug.xcconfig */,
+				18B5493F4F8E0FEBF319605FBDFE0FAE /* Pods-VMM Devotional Messages.release.xcconfig */,
+			);
+			name = "Pods-VMM Devotional Messages";
+			path = "Target Support Files/Pods-VMM Devotional Messages";
+			sourceTree = "<group>";
+		};
+		B109A558AEC0464E1C8AD13A3517ECA8 /* OneSignal */ = {
+			isa = PBXGroup;
+			children = (
+				31024DDD121568A44F4DC265C15F4D16 /* Frameworks */,
+			);
+			name = OneSignal;
+			path = OneSignal;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -77,12 +104,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C13874EFBE3230457A7243EC11668BC8 /* Products */ = {
+		C7C6B198C78783FC88728F1C00874967 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				276F54E668E3A46C75B3B074FF626B72 /* libPods-VMMApp.a */,
+				A1EC07610E509D4128FD14F577EDEA3D /* Pods-VMM Devotional Messages */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -96,20 +123,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3D40D6EF7672FFAC17FC23DF7EEB4663 /* Pods-VMMApp */ = {
+		E185E00E65BAFB14392D509870B01C31 /* Pods-VMM Devotional Messages */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 368AC175AA0CF2CE82BD28F5C4BF394E /* Build configuration list for PBXNativeTarget "Pods-VMMApp" */;
+			buildConfigurationList = A285D3280601B388C53828C7C6599B7D /* Build configuration list for PBXNativeTarget "Pods-VMM Devotional Messages" */;
 			buildPhases = (
-				7C80038F6B2E1C7344E39902CCB4D76C /* Sources */,
-				CD8E9E5BFBA3ADA50CD7F2574E99D494 /* Frameworks */,
+				775BD55FB2A490E7D60A12D9902F0BF6 /* Sources */,
+				11B8D8804C6D1E0FCADBDCBFB7856911 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-VMMApp";
-			productName = "Pods-VMMApp";
-			productReference = 276F54E668E3A46C75B3B074FF626B72 /* libPods-VMMApp.a */;
+			name = "Pods-VMM Devotional Messages";
+			productName = "Pods-VMM Devotional Messages";
+			productReference = 2EA8E67CB3BDCBF95AD6718C1A472FEA /* libPods-VMM Devotional Messages.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -129,30 +156,30 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C13874EFBE3230457A7243EC11668BC8 /* Products */;
+			productRefGroup = 263AAD833E3836704BF4EE537C2AAE89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D40D6EF7672FFAC17FC23DF7EEB4663 /* Pods-VMMApp */,
+				E185E00E65BAFB14392D509870B01C31 /* Pods-VMM Devotional Messages */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7C80038F6B2E1C7344E39902CCB4D76C /* Sources */ = {
+		775BD55FB2A490E7D60A12D9902F0BF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				277C6F47D095613311B61F17970BA973 /* Pods-VMMApp-dummy.m in Sources */,
+				DD6037866B19406CEF2AA1036E7DBE6B /* Pods-VMM Devotional Messages-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2DF3705028FA8A52C8192212DF259BE2 /* Debug */ = {
+		27F77096D3DD7DDA21832227F799BCB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DECDA93C5192AB57B1E33310E3621F13 /* Pods-VMMApp.debug.xcconfig */;
+			baseConfigurationReference = 77AC6E0B2BA4E465F739A2A788CAFF78 /* Pods-VMM Devotional Messages.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -170,9 +197,9 @@
 			};
 			name = Debug;
 		};
-		B3FF3CD75E5ED8C99B95F3C4E00E63E1 /* Release */ = {
+		953C5332C12ECA23ACAA01D0C07C0D4E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6760D6A98B9A8959D89C52B63CF3AA58 /* Pods-VMMApp.release.xcconfig */;
+			baseConfigurationReference = 18B5493F4F8E0FEBF319605FBDFE0FAE /* Pods-VMM Devotional Messages.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -324,11 +351,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		368AC175AA0CF2CE82BD28F5C4BF394E /* Build configuration list for PBXNativeTarget "Pods-VMMApp" */ = {
+		A285D3280601B388C53828C7C6599B7D /* Build configuration list for PBXNativeTarget "Pods-VMM Devotional Messages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2DF3705028FA8A52C8192212DF259BE2 /* Debug */,
-				B3FF3CD75E5ED8C99B95F3C4E00E63E1 /* Release */,
+				27F77096D3DD7DDA21832227F799BCB0 /* Debug */,
+				953C5332C12ECA23ACAA01D0C07C0D4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

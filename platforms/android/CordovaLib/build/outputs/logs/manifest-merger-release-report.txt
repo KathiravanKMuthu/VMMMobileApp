@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-24:12
-INJECTED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-24:12
-INJECTED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-24:12
-INJECTED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-24:12
-INJECTED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-24:12
-INJECTED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-24:12
-INJECTED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-24:12
+ADDED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
+INJECTED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
+INJECTED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
+INJECTED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
+INJECTED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
+INJECTED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
+INJECTED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
 	package
 		ADDED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:21:7-35
 		INJECTED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml
@@ -25,7 +25,3 @@ uses-sdk
 ADDED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:22:5-44
 	android:minSdkVersion
 		ADDED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:22:15-41
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:23:5-81
-	android:name
-		ADDED from /Users/kkadarkaraimuthu/MyProjects/VMMApp/platforms/android/CordovaLib/AndroidManifest.xml:23:22-78

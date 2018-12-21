@@ -93,7 +93,7 @@ module.exports.metadata =
   "cordova-plugin-x-socialsharing": "5.3.2",
   "cordova-sqlite-storage": "2.3.0",
   "ionic-plugin-keyboard": "2.2.1",
-  "onesignal-cordova-plugin": "2.3.3"
+  "onesignal-cordova-plugin": "2.4.0"
 };
 // BOTTOM OF METADATA
 });
